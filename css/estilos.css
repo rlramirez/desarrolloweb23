@@ -23,7 +23,7 @@ nav.menuPrincipal{
 	width: 90%;
 	margin: 0 auto;
 	background: #027846;
-	padding: 1em;
+	padding: 1em 0;
 	text-align: center;
 }
 nav.menuPrincipal a{
@@ -34,4 +34,36 @@ nav.menuPrincipal a{
 nav.menuPrincipal a:hover{
 	color: #3FD664;
 	background: #F9F9F9;
+}
+.Slider, .contenedor{
+	width: 90%;
+	margin: 0 auto;
+}
+.Slider img{
+	width: 100%;
+}
+.atractivos{
+	display: flex;
+	justify-content: space-between;
+}
+.titulosH2{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 0px;
+	letter-spacing: 0.235em;
+	color: #07BB91;
+	height: 50px;
+	text-align: center;
+	padding: 2em 0 0 0;
+}
+.slogan{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 0px;
+	text-align: center;
+	letter-spacing: 0.22em;
+	color: #655454;
+	padding: 0 0 2em 0;
 }
