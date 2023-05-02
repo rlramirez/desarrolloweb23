@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-<header class="cabeceraPrincipal">
+<header class="cabeceraPrincipal" id="inicio">
 	<section class="logo">
 		<img src="images/logotipo.png" title="Logotipo de Atractivos turisticos">
 	</section>
@@ -16,18 +16,19 @@
 	</section>
 </header>
 <nav class="menuPrincipal">
-	<a href="">Inicio</a>
-	<a href="">Atractivos</a>
+	<a href="#inicio">Inicio</a>
+	<a href="#atractivos">Atractivos</a>
 	<a href="">Gastronomía</a>
-	<a href="">Cultura</a>
-	<a href="">Hoteles</a>
-	<a href="">Contactos</a>
+	<a href="internas/cultura.php">Cultura</a>
+	<a href="#hoteles">Hoteles</a>
+	<a href="#contactos">Contactos</a>
 </nav>
 <section class="Slider">
 	<img src="images/slider.jpg">
 </section>
 <section class="contenedor">
-	<h2 class="titulosH2">Atractivos Turísticos</h2>
+	<div class="espacio"></div>
+	<h2 class="titulosH2" id="atractivos">Atractivos Turísticos</h2>
 	<p class="slogan">Conoce los mejores lugares turísticos del Ecuador</p>
 	<section class="atractivos">
 		<article>
@@ -43,18 +44,44 @@
 			<img src="images/image4.jpg">
 		</article>
 	</section>
-	<section>
-		<section>
-			Titulos hoteles
-		</section>
-		<section>
-			Post
-		</section>
+	<div class="espacio"></div>
+	<h2 class="titulosH2" id="hoteles">Recursos Hoteleros</h2>
+	<p class="slogan">Conoce los hoteles del Ecuador</p>
+	<section class="hoteles">
+		<article>
+			<img src="images/hotel1.jpg">
+		</article>
+		<article>
+			<img src="images/hotel2.jpg">
+		</article>
 	</section> 
 </section>
-<aside>Sponsor</aside>
-<footer class="piePagina">
-	Pie de pagina
+<div class="espacio"></div>
+<aside class="sponsor">
+	<img src="images/logo1.png">
+	<img src="images/logo2.png">
+</aside>
+<footer class="piePagina" id="contactos">
+	<section> 
+		<img src="images/logotipo2.png">
+		<p>Derechos Reservados 2023</p>
+	</section>
+	<section>
+		<ul>
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#atractivos">Atractivos</a></li>
+			<li><a href="">Gastronomía</a></li>
+			<li><a href="">Cultura</a></li>
+			<li><a href="#hoteles">Hoteles</a></li>
+			<li><a href="#contactos">Contactos</a></li>
+		</ul>
+	</section>
+	<section>
+		<p>992348067<br>
+			0991623447<br>
+			mailto:info@sabirm.com<br>
+			Loja - Ecuador</p>
+	</section>
 </footer>
 </body>
 </html>
