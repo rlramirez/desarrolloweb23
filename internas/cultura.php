@@ -27,26 +27,60 @@
 <section class="contenedor">
 	<div class="espacio"></div>
 	<h2 class="titulosH2" id="atractivos">FORMULARIO DE REGISTRO</h2>
-	<form action="validar.php" method="post">
-	<div class="grupoForm">
-		<label for="nombres">Nombres</label>
-		<input type="text" name="nombre" id="nombres" placeholder="Ingrese sus nombres completos" required>
-	</div>
-	<div class="grupoForm">
-		<label for="apellidos">Apellidos</label>
-		<input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos completos">
-	</div>
-	<div class="grupoForm">
-		<label for="correo">Correo</label>
-		<input type="email" name="correo" id="correo" placeholder="Ingrese su correoelectronico">
-	</div>
-	<div class="grupoForm">
-		<label for="fecha">Fecha de Nacimiento</label>
-		<input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimeinto">
-	</div>
-	<div class="grupoForm">
-		<button class="boton1" type="submit">Guardar</button>
-	</div>
+	<form action="validar.php" method="post" class="formulario">
+		<div class="box2">
+			<div class="grupoForm">
+				<label for="nombres">Nombres</label>
+				<input type="text" name="nombre" id="nombres" placeholder="Ingrese sus nombres completos" required>
+			</div>
+			<div class="grupoForm">
+				<label for="apellidos">Apellidos</label>
+				<input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos completos">
+			</div>
+			<div class="grupoForm">
+				<label for="correo">Correo</label>
+				<input type="email" name="correo" id="correo" placeholder="Ingrese su correoelectronico">
+			</div>
+			<div class="grupoForm">
+				<label for="fecha">Fecha de Nacimiento</label>
+				<input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimeinto">
+			</div>
+		</div>
+		<div class="box2">
+			<div class="grupoForm">
+				<label for="pais">País</label>
+				<select name="pais" id="pais">
+				  <option value="1">Ecuador</option>
+				  <option value="2">Perú</option>
+				  <option value="3">Colombia</option>
+				  <option value="4">Argentina</option>
+				</select>
+			</div>
+			<div class="grupoForm">
+				<label for="estadoCivil">Estado Civil</label>
+				<input type="radio" id="divorciado" name="estadoCivil" value="divorciado"><label for="divorciado">Divorciado</label>
+				<input type="radio" id="soltero" name="estadoCivil" value="Soltero"><label for="soltero">Soltero</label>
+				<input type="radio" id="casado" name="estadoCivil" value="Casado"><label for="casado">Casado</label><br>
+			</div>
+			<div class="grupoForm">
+				<label for="correo">Areas de interés</label>
+				<section class="horizontal">
+					<input type="checkbox" id="hoteles" name="hoteles" value="hoteles">
+					<label for="hoteles"> Hoteles</label>
+					<input type="checkbox" id="gastronomia" name="gastronomia" value="gastronomia">
+					<label for="gastronomia"> Gastronomía</label>
+					<input type="checkbox" id="medioAmbiente" name="medioAmbiente" value="medioAmbiente">
+					<label for="medioAmbiente"> Medio Ambiente</label>
+				</section>
+			</div>
+			<div class="grupoForm">
+				<label for="dni">Céduña / DNI</label>
+				<input type="number" name="dni" id="dni" >
+			</div>
+			<div class="grupoForm">
+				<button class="boton1" type="submit">Guardar</button>
+			</div>
+		</div>
 	</form>
 	
 </section>
